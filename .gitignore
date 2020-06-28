@@ -2,12 +2,18 @@
 # Godot-specific ignores
 .import/
 
+
 # Imported translations (automatically generated from CSV files)
 *.translation
+
+export.cfg
+export_presets.cfg
+
 
 # Mono-specific ignores
 .mono/
 data_*/
+<<<<<<< HEAD
 mono_crash.*.json
 
 # System/tool-specific ignores
@@ -18,6 +24,7 @@ user/
 # Plugin specific ignores
 screenshots/
 icons.pngs/
+
 
 
 
