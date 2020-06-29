@@ -4,10 +4,12 @@ var velocity = Vector2.ZERO
 
 const MAX_SPEED = 100
 
+onready var animationPlayer = $AnimationPlayer
+onready var animationTree = $AnimationTree
+onready var animationState = animationTree.get("parameters/playback")
 
-var isH = false
 var isV = false
-
+var isH = false
 
 func _physics_process(delta):
 	var input_vector = Vector2.ZERO
@@ -27,6 +29,12 @@ func _physics_process(delta):
 	else :
 		isV = false
 	
+	if input_vector != Vector2.ZERO :
+		animationTree.set("parameters/Idle/blend_position", input_vector)
+		animationTree.set("parameters/Run/blend_position", input_vector)
+		animationState.travel("Run")
+	else :
+		animationState.travel("Idle")
 	
 	velocity = input_vector
 	
