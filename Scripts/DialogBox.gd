@@ -1,7 +1,7 @@
 extends RichTextLabel
 
 
-var dialogList = ["Primeiro", "Segundo", "Terceiro", "Fim"]
+var dialogList = ["First sentence", "Second sentence", "Third- You get it", "End"]
 
 var page = 0
 func _ready():
