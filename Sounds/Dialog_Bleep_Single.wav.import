@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Dialog_Bleep_Single.wav-999d3e59f3b716b754146ab1cde518d8.sample"
+
+[deps]
+
+source_file="res://Sounds/Dialog_Bleep_Single.wav"
+dest_files=[ "res://.import/Dialog_Bleep_Single.wav-999d3e59f3b716b754146ab1cde518d8.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

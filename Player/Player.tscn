@@ -289,14 +289,14 @@ graph_offset = Vector2( -526.359, 0 )
 [sub_resource type="AnimationNodeStateMachinePlayback" id=23]
 
 [node name="Player" type="KinematicBody2D"]
-position = Vector2( -1, -2 )
-z_index = 2
+z_index = 5
 script = ExtResource( 1 )
+initial_position = Vector2( 160, 96 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 1, 27 )
+position = Vector2( -0.889, 27 )
 rotation = 1.5708
-scale = Vector2( 1.801, 1.075 )
+scale = Vector2( 1.807, 0.929 )
 shape = SubResource( 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -309,12 +309,6 @@ shape = SubResource( 1 )
 "anims/Run left" = SubResource( 8 )
 "anims/Run right" = SubResource( 9 )
 
-[node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 1, 2 )
-texture = ExtResource( 2 )
-region_enabled = true
-region_rect = Rect2( 64, 0, 64, 64 )
-
 [node name="AnimationTree" type="AnimationTree" parent="."]
 tree_root = SubResource( 22 )
 anim_player = NodePath("../AnimationPlayer")
@@ -322,3 +316,11 @@ active = true
 parameters/playback = SubResource( 23 )
 parameters/Idle/blend_position = Vector2( 0, 0 )
 parameters/Run/blend_position = Vector2( 0, 0 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0.10276, -0.0622559 )
+rotation = -4.815e-08
+scale = Vector2( 1, 1 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 64, 0, 64, 64 )

@@ -1,0 +1,62 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Sprites/UI/TextBoxGrid.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/Dialog/DialogText.gd" type="Script" id=2]
+[ext_resource path="res://Fonts/submarine.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Sounds/Dialog_Bleep_Single.wav" type="AudioStream" id=4]
+[ext_resource path="res://Scripts/Dialog/DialogBox.gd" type="Script" id=5]
+
+[sub_resource type="Theme" id=1]
+
+[sub_resource type="Theme" id=2]
+
+[sub_resource type="BitmapFont" id=3]
+
+[node name="DialogBox" type="NinePatchRect"]
+margin_top = -24.0
+margin_right = 256.0
+margin_bottom = 56.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource( 1 )
+texture = ExtResource( 1 )
+region_rect = Rect2( 0, 0, 30, 30 )
+patch_margin_left = 20
+patch_margin_top = 11
+patch_margin_right = 20
+patch_margin_bottom = 10
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DialogTimer" type="Timer" parent="."]
+wait_time = 0.1
+autostart = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 72.0
+margin_top = 16.0
+margin_right = 240.0
+margin_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource( 2 )
+custom_fonts/mono_font = SubResource( 3 )
+custom_fonts/normal_font = ExtResource( 3 )
+bbcode_enabled = true
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+
+[node name="DialogBleep" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+[connection signal="timeout" from="DialogTimer" to="RichTextLabel" method="_on_DialogTimer_timeout"]
+[connection signal="BleepSignal" from="RichTextLabel" to="." method="_on_RichTextLabel_BleepSignal"]
+[connection signal="CloseDialogSignal" from="RichTextLabel" to="." method="_on_RichTextLabel_CloseDialogSignal"]
+[connection signal="draw" from="RichTextLabel" to="RichTextLabel" method="_on_RichTextLabel_draw"]

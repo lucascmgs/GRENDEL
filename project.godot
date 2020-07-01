@@ -39,14 +39,14 @@ _global_script_class_icons={
 [application]
 
 config/name="S care"
-run/main_scene="res://Scenes/MainScene.tscn"
+run/main_scene="res://Scenes/KitchenScene.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
-UserData="*res://addons/github-integration/scripts/user_data.gd"
-IconLoaderGithub="*res://addons/github-integration/scripts/IconLoaderGithub.gd"
-RestHandler="*res://addons/github-integration/scripts/RestHandler.gd"
+DialogSingleton="*res://Scenes/Singleton/DialogSingleton.tscn"
+SceneSwitcher="*res://Scenes/Singleton/SceneSwitcher.gd"
+Player="*res://Player/Player.tscn"
 
 [display]
 
@@ -59,7 +59,7 @@ window/stretch/aspect="keep"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "aseprite_importer", "github-integration" )
+enabled=PoolStringArray( "aseprite_importer" )
 
 [gdnative]
 
