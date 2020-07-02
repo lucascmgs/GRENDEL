@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Outside_Wind_Atmosphere.wav-1f16a0548781db7630b3c4d1837e920c.sample"
+
+[deps]
+
+source_file="res://Sounds/Outside_Wind_Atmosphere.wav"
+dest_files=[ "res://.import/Outside_Wind_Atmosphere.wav-1f16a0548781db7630b3c4d1837e920c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

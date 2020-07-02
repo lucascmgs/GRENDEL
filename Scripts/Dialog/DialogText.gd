@@ -1,7 +1,7 @@
 extends RichTextLabel
 
 
-var dialogList = ["First sentence very long for testing purposes", "Second sentence, for testing purposes, of course", "Third- You get it", "Final sentence, the box will close next"]
+export var dialogList : Array
 
 var page = 0
 
@@ -9,7 +9,6 @@ signal BleepSignal
 signal CloseDialogSignal
 
 func _ready():
-	set_bbcode(dialogList[page])
 	set_visible_characters(0)
 	set_process_input(true)
 
@@ -21,6 +20,8 @@ func _input(event):
 				set_bbcode(dialogList[page])
 				set_visible_characters(0)
 			else :
+				page = 0
+				set_visible_characters(0)
 				emit_signal("CloseDialogSignal")
 		else :
 			set_visible_characters(get_total_character_count())
@@ -34,12 +35,14 @@ func current_char_is_blank():
 		return true
 
 func _on_DialogTimer_timeout():
-	var visible_characters = get_visible_characters()
 
-	if visible_characters <= get_total_character_count() :
-		if !current_char_is_blank() :
-			emit_signal("BleepSignal")
-		set_visible_characters( visible_characters + 1)
+	if visible :
+		var visible_characters = get_visible_characters()
+
+		if visible_characters <= get_total_character_count() :
+			if !current_char_is_blank() :
+				emit_signal("BleepSignal")
+			set_visible_characters( visible_characters + 1)
 
 
 

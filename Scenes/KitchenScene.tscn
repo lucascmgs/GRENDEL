@@ -1,7 +1,7 @@
 [gd_scene load_steps=36 format=2]
 
-[ext_resource path="res://Sprites/KitchenTileMap.png" type="Texture" id=1]
-[ext_resource path="res://Sprites/HouseInteriorTileMap.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Tilemaps/KitchenTileMap.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/Tilemaps/HouseInteriorTileMap.png" type="Texture" id=2]
 [ext_resource path="res://Scenes/Singleton/Resources/SceneChangeLocation.tscn" type="PackedScene" id=3]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
@@ -837,11 +837,11 @@ tile_data = PoolIntArray( 262144, 9, 0, 262153, 8, 0, 327680, 4, 0, 327681, 3, 0
 position = Vector2( 0, 112 )
 scale = Vector2( 1, 2.014 )
 
-[node name="SceneChangeLocationBottom" parent="." instance=ExtResource( 3 )]
+[node name="GoToHouseExterior" parent="." instance=ExtResource( 3 )]
 position = Vector2( 160, 192 )
 scale = Vector2( 2.436, 0.762 )
-destiny_scene = "res://Scenes/HouseFrontScene.tscn"
-new_player_position = Vector2( 160, 144 )
+target_scene = "res://Scenes/HouseExteriorScene.tscn"
+new_player_position = Vector2( 160, 170 )
 
 [node name="SceneChangeLocationRight" parent="." instance=ExtResource( 3 )]
 position = Vector2( 320, 112 )

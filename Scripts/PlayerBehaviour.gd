@@ -2,7 +2,8 @@ extends KinematicBody2D
 
 var velocity = Vector2.ZERO
 
-const MAX_SPEED = 100
+const MAX_SPEED = 70
+
 
 
 export var initial_position = Vector2.ZERO
@@ -52,6 +53,8 @@ func _physics_process(delta):
 	
 		velocity = input_vector
 		velocity = move_and_slide(velocity * MAX_SPEED)
+	else :
+		animationState.travel("Idle")
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

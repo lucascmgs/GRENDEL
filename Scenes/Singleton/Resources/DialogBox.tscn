@@ -13,6 +13,7 @@
 [sub_resource type="BitmapFont" id=3]
 
 [node name="DialogBox" type="NinePatchRect"]
+visible = false
 margin_top = -24.0
 margin_right = 256.0
 margin_bottom = 56.0
@@ -34,10 +35,9 @@ __meta__ = {
 
 [node name="DialogTimer" type="Timer" parent="."]
 wait_time = 0.1
-autostart = true
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
-margin_left = 72.0
+margin_left = 16.0
 margin_top = 16.0
 margin_right = 240.0
 margin_bottom = 64.0

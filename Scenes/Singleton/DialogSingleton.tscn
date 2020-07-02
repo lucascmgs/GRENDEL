@@ -1,9 +1,11 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Scenes/Singleton/Resources/DialogBox.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Singleton/DialogSingleton.gd" type="Script" id=2]
 
-[node name="Node2D" type="Node2D"]
+[node name="DialogSingleton" type="Node2D"]
 z_index = 10
+script = ExtResource( 2 )
 
 [node name="DialogBox" parent="." instance=ExtResource( 1 )]
 margin_left = 32.0

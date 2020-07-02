@@ -10,6 +10,11 @@ config_version=4
 
 _global_script_classes=[ {
 "base": "Node",
+"class": "Action",
+"language": "GDScript",
+"path": "res://Scenes/Singleton/Resources/Action.gd"
+}, {
+"base": "Node",
 "class": "AsepriteImportData",
 "language": "GDScript",
 "path": "res://addons/aseprite_importer/classes/AsepriteImportData.gd"
@@ -18,6 +23,11 @@ _global_script_classes=[ {
 "class": "AsepriteImporter",
 "language": "GDScript",
 "path": "res://addons/aseprite_importer/classes/AsepriteImporter.gd"
+}, {
+"base": "Action",
+"class": "DialogAction",
+"language": "GDScript",
+"path": "res://Scripts/Dialog/DialogAction.gd"
 }, {
 "base": "Node",
 "class": "EditorTheme",
@@ -30,8 +40,10 @@ _global_script_classes=[ {
 "path": "res://git_api.gdns"
 } ]
 _global_script_class_icons={
+"Action": "",
 "AsepriteImportData": "",
 "AsepriteImporter": "",
+"DialogAction": "",
 "EditorTheme": "",
 "GitAPI": ""
 }
@@ -39,7 +51,7 @@ _global_script_class_icons={
 [application]
 
 config/name="S care"
-run/main_scene="res://Scenes/KitchenScene.tscn"
+run/main_scene="res://Scenes/IntroScene.tscn"
 config/icon="res://icon.png"
 
 [autoload]
@@ -47,6 +59,8 @@ config/icon="res://icon.png"
 DialogSingleton="*res://Scenes/Singleton/DialogSingleton.tscn"
 SceneSwitcher="*res://Scenes/Singleton/SceneSwitcher.gd"
 Player="*res://Player/Player.tscn"
+DialogTextDictionary="*res://Scenes/Singleton/DialogTextDictionarySingleton.tscn"
+MusicPlayer="*res://Scenes/Singleton/MusicPlayer.tscn"
 
 [display]
 
@@ -98,4 +112,5 @@ confirm_text={
 
 [rendering]
 
+environment/default_clear_color=Color( 0, 0, 0, 1 )
 environment/default_environment="res://default_env.tres"

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Front_Gate.wav-414dd372d0d957d4ec7b93c10f747646.sample"
+
+[deps]
+
+source_file="res://Sounds/Front_Gate.wav"
+dest_files=[ "res://.import/Front_Gate.wav-414dd372d0d957d4ec7b93c10f747646.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

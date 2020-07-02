@@ -289,14 +289,13 @@ graph_offset = Vector2( -526.359, 0 )
 [sub_resource type="AnimationNodeStateMachinePlayback" id=23]
 
 [node name="Player" type="KinematicBody2D"]
-z_index = 5
+z_index = 1
 script = ExtResource( 1 )
-initial_position = Vector2( 160, 96 )
+initial_position = Vector2( 160, 160 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -0.889, 27 )
-rotation = 1.5708
-scale = Vector2( 1.807, 0.929 )
+position = Vector2( -5.96046e-08, 0 )
+scale = Vector2( 3.685, 0.551 )
 shape = SubResource( 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -318,9 +317,8 @@ parameters/Idle/blend_position = Vector2( 0, 0 )
 parameters/Run/blend_position = Vector2( 0, 0 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 0.10276, -0.0622559 )
+position = Vector2( 1, -27 )
 rotation = -4.815e-08
-scale = Vector2( 1, 1 )
 texture = ExtResource( 2 )
 region_enabled = true
 region_rect = Rect2( 64, 0, 64, 64 )
