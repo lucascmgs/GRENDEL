@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=2]
+[gd_scene load_steps=39 format=2]
 
 [ext_resource path="res://Sprites/Tilemaps/KitchenTileMap.png" type="Texture" id=1]
 [ext_resource path="res://Sprites/Tilemaps/HouseInteriorTileMap.png" type="Texture" id=2]
@@ -6,7 +6,6 @@
 [ext_resource path="res://Scenes/Singleton/Resources/DialogAction.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Woman/Susane.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scenes/Singleton/Resources/PlaySongAction.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Scripts/SceneSwitchLocation.gd" type="Script" id=7]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
@@ -837,20 +836,29 @@ cell_size = Vector2( 32, 32 )
 format = 1
 tile_data = PoolIntArray( 262144, 9, 0, 262153, 8, 0, 327680, 4, 0, 327681, 3, 0, 327682, 3, 0, 327683, 3, 0, 327684, 12, 0, 327685, 13, 0, 327686, 3, 0, 327687, 3, 0, 327688, 3, 0, 327689, 5, 0 )
 
-[node name="SceneChangeLocationLeft" parent="." instance=ExtResource( 3 )]
-position = Vector2( 0, 112 )
-scale = Vector2( 1, 2.014 )
-script = null
-
-[node name="GoToHouseExterior" parent="." instance=ExtResource( 3 )]
+[node name="GoOutside" parent="." instance=ExtResource( 3 )]
 position = Vector2( 160, 192 )
-scale = Vector2( 2.436, 0.762 )
-script = ExtResource( 7 )
+scale = Vector2( 2.419, 0.902 )
+conditions_to_happen = [ "kitchen_sink_checked" ]
+alternative_messages = [ "I should take a look at the sink before leaving the kitchen." ]
+target_scene = "res://Scenes/HouseExteriorScene.tscn"
+new_player_position = Vector2( 160, 170 )
 
-[node name="SceneChangeLocationRight" parent="." instance=ExtResource( 3 )]
-position = Vector2( 320, 112 )
-scale = Vector2( 1, 2.014 )
-script = null
+[node name="GoOutside2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 320, 120 )
+scale = Vector2( 0.896, 2.851 )
+conditions_to_happen = [ "kitchen_sink_checked" ]
+alternative_messages = [ "I should take a look at the sink before leaving the kitchen." ]
+target_scene = "res://Scenes/HouseExteriorScene.tscn"
+new_player_position = Vector2( 160, 170 )
+
+[node name="GoOutside3" parent="." instance=ExtResource( 3 )]
+position = Vector2( -1.52588e-05, 120 )
+scale = Vector2( 0.896, 2.851 )
+conditions_to_happen = [ "kitchen_sink_checked" ]
+alternative_messages = [ "I should take a look at the sink before leaving the kitchen." ]
+target_scene = "res://Scenes/HouseExteriorScene.tscn"
+new_player_position = Vector2( 160, 170 )
 
 [node name="Susane" parent="." instance=ExtResource( 5 )]
 position = Vector2( 216, 128 )

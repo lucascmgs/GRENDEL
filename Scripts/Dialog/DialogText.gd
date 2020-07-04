@@ -24,7 +24,8 @@ func _input(event):
 				set_visible_characters(0)
 				emit_signal("CloseDialogSignal")
 		else :
-			set_visible_characters(get_total_character_count())
+			if get_visible_characters() > 0:
+				set_visible_characters(get_total_character_count())
 			
 			
 func current_char_is_blank():
