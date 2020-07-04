@@ -1,6 +1,6 @@
 extends NinePatchRect
 
-onready var audioStream = $DialogBleep
+
 onready var timer = $DialogTimer
 onready var textLabel = $RichTextLabel
 
@@ -11,7 +11,7 @@ func startDialog(textList):
 	timer.start()
 
 func _on_RichTextLabel_BleepSignal():
-	audioStream.play()
+	MusicPlayer.play_sfx("DialogBleep")
 
 func _on_RichTextLabel_CloseDialogSignal():
 	Player.canMove = true

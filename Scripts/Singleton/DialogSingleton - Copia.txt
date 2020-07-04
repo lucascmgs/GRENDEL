@@ -1,0 +1,38 @@
+extends Node2D
+
+onready var dialogBox = $DialogBox
+
+var texts = {
+	"intro" : [
+		"So this is it.", 
+		"This is the house John told me about.", 
+		"He told me the owner is an old, innocent woman.", 
+		"I'll make a good buck with this one, I'm sure.", 
+		"This place is creepy as hell, but I just care about the money."
+		],
+	"seen_house" : [
+		"Man, look at this!", 
+		"This house is old and really busted!", 
+		"Horror movie material, for sure.", 
+		"You really can't make this shit up haha.", 
+		"Let's go inside."],
+	"entered_kitchen" : [
+		"Woman: Hello dear, welcome to my house.",
+		"Hey there. You should be Susane, right?",
+		"Woman: Yes, that is me indeed.",
+		"Cool. Er... do you live alone here?",
+		"Susane: Well, yes, it's just me.",
+		"Susane: My son used to live here with me, but he disappeared, years ago.",
+		"Susane: I miss him so much. He used to help me with the house's maintenance.",
+		"(Like I care) Oh, It's so sad to hear that.",
+		"Well, I was told you had a problem with your piping system, is that right?",
+		"Susane: Yes, and my son isn't here to take care of thing anymore, so I called John.",
+		"Right, and he was busy with another client, so that's why I'm here!",
+		"Susane: I'm glad you are.",
+		"Thanks. So let's begin: Can you describe the problem?"
+		]
+}
+
+
+func startDialog(text_list) :
+	dialogBox.startDialog(text_list)
