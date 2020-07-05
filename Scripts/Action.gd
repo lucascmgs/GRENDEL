@@ -4,6 +4,7 @@ class_name Action
 
 export var exectuteOnReady = false
 export var oneShot = false
+export var destroyActionOnComplete = false
 
 export(Array, String) var conditions_to_happen
 export(Array, String) var conditions_not_to_happen
@@ -18,6 +19,11 @@ func _ready() :
 
 
 func try_to_perform() :
+	if(destroyActionOnComplete and 
+	ConditionTrackerSingleton.storedConditions.has(resulting_condition) or
+	ConditionTrackerSingleton.storedConditions.has(name)):
+		queue_free()
+		return
 	
 	if(oneShot):
 		if resulting_condition.empty() :
@@ -41,6 +47,8 @@ func try_to_perform() :
 	ConditionTrackerSingleton.storedConditions[resulting_condition] = true
 	print(ConditionTrackerSingleton.storedConditions)
 	perform()
+	
+		
 	
 	
 func display_message_and_quit() :

@@ -895,6 +895,7 @@ conditions_to_not_exist = [ "reported_to_susane" ]
 position = Vector2( -3.05176e-05, 0 )
 scale = Vector2( 1.27, 0.902 )
 oneShot = true
+destroyActionOnComplete = true
 conditions_to_happen = [ "kitchen_sink_checked", "bathroom_sink_checked" ]
 alternative_messages = [ "SUSANE: Please check both sinks.", "SUSANE: There's one here and another one in the bathroom.", "SUSANE: To go there, just take the left door" ]
 resulting_condition = "reported_to_susane"
@@ -911,7 +912,7 @@ dialog_name = "entered_kitchen"
 [node name="Came out of bedroom" parent="Actions" instance=ExtResource( 4 )]
 exectuteOnReady = true
 oneShot = true
-conditions_to_happen = [ "grate_checked" ]
+conditions_to_happen = [ "pipe_checked" ]
 dialog_name = "came_out_of_bedroom"
 
 [node name="PlayKitchenTheme" parent="Actions" instance=ExtResource( 6 )]
@@ -927,9 +928,9 @@ alternative_messages = [ "I've already checked the kitchen sink." ]
 resulting_condition = "kitchen_sink_checked"
 dialog_name = "interact_kitchen_sink"
 
-[node name="ScebeChangeActions" type="Node" parent="."]
+[node name="SceneChangeActions" type="Node" parent="."]
 
-[node name="GoToBedroom" parent="ScebeChangeActions" instance=ExtResource( 3 )]
+[node name="GoToBedroom" parent="SceneChangeActions" instance=ExtResource( 3 )]
 position = Vector2( 320, 120 )
 scale = Vector2( 0.111, 2.845 )
 conditions_to_happen = [ "reported_to_susane" ]
@@ -937,7 +938,7 @@ alternative_messages = [ "I shouldn't go to the bedroom yet." ]
 target_scene = "res://Scenes/Bedroom.tscn"
 new_player_position = Vector2( 32, 120 )
 
-[node name="GoToBathroom" parent="ScebeChangeActions" instance=ExtResource( 3 )]
+[node name="GoToBathroom" parent="SceneChangeActions" instance=ExtResource( 3 )]
 position = Vector2( -4.76837e-07, 120 )
 scale = Vector2( 0.152, 2.851 )
 conditions_to_happen = [ "kitchen_sink_checked" ]
@@ -945,7 +946,7 @@ alternative_messages = [ "I should take a look at the sink before leaving the ki
 target_scene = "res://Scenes/Bathroom.tscn"
 new_player_position = Vector2( 288, 120 )
 
-[node name="GoOutside" parent="ScebeChangeActions" instance=ExtResource( 3 )]
+[node name="GoOutside" parent="SceneChangeActions" instance=ExtResource( 3 )]
 position = Vector2( 160, 192 )
 scale = Vector2( 2.419, 0.902 )
 conditions_to_happen = [ "kitchen_sink_checked" ]
