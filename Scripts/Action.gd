@@ -13,19 +13,18 @@ export(String) var resulting_condition
 signal finished()
 
 func _ready() :
-
-	if oneShot :
-		if resulting_condition.empty() :
-			resulting_condition = name
-		conditions_not_to_happen.resize(conditions_not_to_happen.size() * 2)
-		conditions_not_to_happen.push_front(resulting_condition)
-		print(conditions_not_to_happen)
-		pass
 	if exectuteOnReady :
 		try_to_perform()
 
 
 func try_to_perform() :
+	
+	if(oneShot):
+		if resulting_condition.empty() :
+			resulting_condition = name
+		conditions_not_to_happen.resize(conditions_not_to_happen.size() * 2)
+		conditions_not_to_happen.push_front(resulting_condition)
+		
 	for condition in conditions_to_happen :
 		if not condition in ConditionTrackerSingleton.storedConditions :
 			display_message_and_quit()
@@ -36,7 +35,11 @@ func try_to_perform() :
 			print(condition2)
 			display_message_and_quit()
 			return
+			
+	
+	
 	ConditionTrackerSingleton.storedConditions[resulting_condition] = true
+	print(ConditionTrackerSingleton.storedConditions)
 	perform()
 	
 	

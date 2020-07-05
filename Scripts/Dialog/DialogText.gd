@@ -22,6 +22,7 @@ func _input(event):
 			else :
 				page = 0
 				set_visible_characters(0)
+				DialogSingleton.is_displaying = false
 				emit_signal("CloseDialogSignal")
 		else :
 			if get_visible_characters() > 0:

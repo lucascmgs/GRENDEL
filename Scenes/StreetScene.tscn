@@ -5,7 +5,7 @@
 [ext_resource path="res://Sprites/Tilemaps/HouseExteriorTileMap.png" type="Texture" id=3]
 [ext_resource path="res://Scenes/Singleton/Resources/DialogAction.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scenes/Singleton/Resources/PlaySongAction.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Scripts/SceneSwitchLocationAction.gd" type="Script" id=6]
+[ext_resource path="res://Scenes/Singleton/Resources/InteractArea.tscn" type="PackedScene" id=6]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
@@ -805,12 +805,20 @@ dialog_name = "intro"
 exectuteOnReady = true
 song_name = "OutsideWind"
 
+[node name="Get tool at truck" parent="Actions" instance=ExtResource( 6 )]
+position = Vector2( 56, 148 )
+scale = Vector2( 6.002, 1.925 )
+oneShot = true
+conditions_to_happen = [ "pipe_checked" ]
+alternative_messages = [ "(My old truck. It's seen better days. It's seen worse days too. Whatever, I should go.)" ]
+resulting_condition = "got_replacement"
+dialog_name = "got_replacement"
+
 [node name="SceneSwitchArea" type="Node" parent="."]
 
 [node name="GoToHouseExterior" parent="SceneSwitchArea" instance=ExtResource( 2 )]
 position = Vector2( 176, 92 )
 scale = Vector2( 1.858, 0.392 )
-script = ExtResource( 6 )
 target_scene = "res://Scenes/HouseExteriorScene.tscn"
 new_player_position = Vector2( 160, 170 )
 sfx_name = "Front_gate"

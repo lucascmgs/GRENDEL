@@ -56,6 +56,3 @@ func _physics_process(delta):
 	else :
 		animationState.travel("Idle")
 	
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
