@@ -1,0 +1,133 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Fonts/m5x7.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Fonts/m5x7-small.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Scripts/Credits.gd" type="Script" id=3]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0, 0, 0, 1 )
+
+[node name="Credits" type="Node2D"]
+script = ExtResource( 3 )
+time_between_credits = 6
+title_scene_path = "res://Scenes/TitleScreen.tscn"
+
+[node name="The End" type="Panel" parent="."]
+margin_right = 320.0
+margin_bottom = 192.0
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="The end" type="Label" parent="The End"]
+anchor_top = 0.292
+anchor_right = 1.0
+anchor_bottom = 0.521
+margin_top = -24.064
+margin_bottom = 8.96799
+custom_fonts/font = ExtResource( 1 )
+text = "GRENDEL"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="License" type="Panel" parent="."]
+visible = false
+margin_right = 320.0
+margin_bottom = 192.0
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Credits" type="Label" parent="License"]
+anchor_top = 0.292
+anchor_right = 1.0
+anchor_bottom = 0.521
+margin_left = 4.0
+margin_top = -64.064
+margin_bottom = 88.968
+size_flags_horizontal = 13
+size_flags_vertical = 12
+custom_fonts/font = ExtResource( 2 )
+text = "
+
+    This game uses Godot Engine, available under the following license:
+
+    Copyright (c) 2007-2020 Juan Linietsky, Ariel Manzur. Copyright (c) 2014-2020 Godot Engine contributors.
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Credits" type="Panel" parent="."]
+visible = false
+margin_right = 320.0
+margin_bottom = 192.0
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Credits" type="Label" parent="Credits"]
+anchor_top = 0.292
+anchor_right = 1.0
+anchor_bottom = 0.521
+margin_left = 4.0
+margin_top = -24.064
+margin_right = 4.0
+margin_bottom = 8.96799
+custom_fonts/font = ExtResource( 1 )
+text = "Lucas Cordeiro (@lcscrdr) : Programming, art, writing
+
+Jack Eyres (@Eyres_jack) : Composing, Sound Design, Editing"
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="A game by" type="Label" parent="Credits"]
+anchor_top = 0.083
+anchor_right = 1.0
+anchor_bottom = 0.208
+margin_left = 124.0
+margin_top = -3.936
+margin_right = -124.0
+margin_bottom = -3.936
+custom_fonts/font = ExtResource( 1 )
+text = "A game by"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Made with" type="Label" parent="Credits"]
+anchor_top = 0.625
+anchor_right = 1.0
+anchor_bottom = 0.75
+margin_left = 8.0
+margin_top = -12.0
+margin_right = -8.0
+margin_bottom = 41.0
+custom_fonts/font = ExtResource( 1 )
+text = "Font used: m5x7, by Daniel Linssen (@managore)
+
+Portions of this software are copyright © 2020 The FreeType Project (www.freetype.org). All rights reserved."
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}

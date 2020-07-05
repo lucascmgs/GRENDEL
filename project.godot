@@ -29,6 +29,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Scripts/Dialog/DialogAction.gd"
 }, {
+"base": "Action",
+"class": "DialogBeforeSceneAction",
+"language": "GDScript",
+"path": "res://Scripts/DialogBeforeSceneAction.gd"
+}, {
 "base": "Node",
 "class": "EditorTheme",
 "language": "GDScript",
@@ -44,15 +49,18 @@ _global_script_class_icons={
 "AsepriteImportData": "",
 "AsepriteImporter": "",
 "DialogAction": "",
+"DialogBeforeSceneAction": "",
 "EditorTheme": "",
 "GitAPI": ""
 }
 
 [application]
 
-config/name="S care"
-run/main_scene="res://Scenes/IntroScene.tscn"
-config/icon="res://icon.png"
+config/name="GRENDEL"
+run/main_scene="res://Scenes/TitleScreen.tscn"
+boot_splash/image="res://Sprites/UI/Splash Screen.png"
+config/icon="res://Sprites/UI/Icon.png"
+config/windows_native_icon="res://Sprites/UI/Icon.ico"
 
 [autoload]
 

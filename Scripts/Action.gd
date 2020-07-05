@@ -11,6 +11,7 @@ export(Array, String) var conditions_not_to_happen
 export(Array, String) var alternative_messages
 export(String) var resulting_condition
 
+
 signal finished()
 
 func _ready() :
@@ -47,9 +48,6 @@ func try_to_perform() :
 	ConditionTrackerSingleton.storedConditions[resulting_condition] = true
 	print(ConditionTrackerSingleton.storedConditions)
 	perform()
-	
-		
-	
 	
 func display_message_and_quit() :
 	if(not alternative_messages.empty()) :

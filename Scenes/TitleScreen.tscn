@@ -1,0 +1,45 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Fonts/m5x7.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Sprites/UI/Title.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/Title.gd" type="Script" id=3]
+[ext_resource path="res://Scripts/BlinkImage.gd" type="Script" id=4]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0, 0, 0, 1 )
+
+[node name="Title" type="Node2D"]
+script = ExtResource( 3 )
+intro_scene_path = "res://Scenes/IntroScene.tscn"
+
+[node name="BlinkTimer" type="Timer" parent="."]
+wait_time = 0.8
+autostart = true
+
+[node name="Panel" type="Panel" parent="."]
+margin_right = 320.0
+margin_bottom = 192.0
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Press space" type="Label" parent="Panel"]
+anchor_top = 0.75
+anchor_right = 1.0
+anchor_bottom = 0.833
+margin_left = 128.0
+margin_top = -1.52588e-05
+margin_right = -128.0
+margin_bottom = -1.936
+custom_fonts/font = ExtResource( 1 )
+text = "Press Space"
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Sprite" parent="Panel"]
+position = Vector2( 160, 48 )
+texture = ExtResource( 2 )
+[connection signal="timeout" from="BlinkTimer" to="Panel/Press space" method="_on_BlinkTimer_timeout"]

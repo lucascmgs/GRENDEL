@@ -1,0 +1,20 @@
+"normal_ending" : [
+			"What the hell!",
+			"What in the seven hells is this thing!?",
+			"Don't come near me, please!",
+			"Damn, I just wanted to make some money!",
+			"I hate you for sending me here, John!"
+		
+		],
+"ending_with_earrings" : [
+			"What the-",
+			"What the hell are you?",
+			"Wait... Can it be...?",
+			"That earring... Your Susane's son, aren't you?",
+			"CREATURE: *Growls*",
+			"What happend to your mother?",
+			"CREATURE:...",
+			"You've taken her, right? You must have missed her.",
+			"I've got your other earring here, your mom gave it to you, right? Take it.",
+			"(The creature took the earring from me and went away into the basement.)"
+		]

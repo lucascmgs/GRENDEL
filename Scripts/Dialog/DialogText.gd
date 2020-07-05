@@ -8,6 +8,8 @@ var page = 0
 signal BleepSignal
 signal CloseDialogSignal
 
+var scene_to_load_after = ""
+
 func _ready():
 	set_visible_characters(0)
 	set_process_input(true)
@@ -24,6 +26,10 @@ func _input(event):
 				set_visible_characters(0)
 				DialogSingleton.is_displaying = false
 				emit_signal("CloseDialogSignal")
+				if(not scene_to_load_after.empty()) :
+					var temp_scene = scene_to_load_after
+					scene_to_load_after = ""
+					SceneSwitcher.goto_scene(temp_scene)
 		else :
 			if get_visible_characters() > 0:
 				set_visible_characters(get_total_character_count())
