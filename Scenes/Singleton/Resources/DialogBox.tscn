@@ -37,7 +37,7 @@ __meta__ = {
 }
 
 [node name="DialogTimer" type="Timer" parent="."]
-wait_time = 0.1
+wait_time = 0.06
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 anchor_right = 1.0
@@ -59,6 +59,8 @@ __meta__ = {
 
 [node name="DialogBleep" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
+volume_db = -0.116
+pitch_scale = 0.59
 
 [node name="Woman Portrait" parent="." instance=ExtResource( 6 )]
 visible = false

@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Sounds/Outside_Wind_Atmosphere.wav" type="AudioStream" id=1]
 [ext_resource path="res://Scripts/Singleton/MusicPlayerSingleton.gd" type="Script" id=2]
@@ -7,6 +7,10 @@
 [ext_resource path="res://Sounds/Front_Gate.wav" type="AudioStream" id=5]
 [ext_resource path="res://Sounds/Dialog_Bleep_Single.wav" type="AudioStream" id=6]
 [ext_resource path="res://Sounds/Kitchen_Drone_lowres.ogg" type="AudioStream" id=7]
+[ext_resource path="res://Sounds/Footsteps/Concrete_1.wav" type="AudioStream" id=8]
+[ext_resource path="res://Sounds/Footsteps/Concrete_2.wav" type="AudioStream" id=9]
+[ext_resource path="res://Sounds/Footsteps/Concrete_3.wav" type="AudioStream" id=10]
+[ext_resource path="res://Sounds/Footsteps/Concrete_4.wav" type="AudioStream" id=11]
 
 [node name="MusicPlayer" type="Node"]
 script = ExtResource( 2 )
@@ -32,3 +36,21 @@ stream = ExtResource( 5 )
 
 [node name="DialogBleep" type="AudioStreamPlayer" parent="SFX"]
 stream = ExtResource( 6 )
+
+[node name="Footsteps" type="Node" parent="SFX"]
+
+[node name="Concrete1" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource( 8 )
+volume_db = 2.0
+
+[node name="Concrete2" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource( 9 )
+volume_db = 2.0
+
+[node name="Concrete3" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource( 10 )
+volume_db = 2.0
+
+[node name="Concrete4" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource( 11 )
+volume_db = 2.0

@@ -14,6 +14,7 @@ onready var animationState = animationTree.get("parameters/playback")
 
 
 var canMove = true
+var isMoving = false
 
 var isV = false
 var isH = false
@@ -47,12 +48,15 @@ func _physics_process(delta):
 			animationTree.set("parameters/Idle/blend_position", input_vector)
 			animationTree.set("parameters/Run/blend_position", input_vector)
 			animationState.travel("Run")
+			isMoving = true
 		else :
 			animationState.travel("Idle")
+			isMoving = false
 	
 	
 		velocity = input_vector
 		velocity = move_and_slide(velocity * MAX_SPEED)
 	else :
 		animationState.travel("Idle")
+		isMoving = false
 	

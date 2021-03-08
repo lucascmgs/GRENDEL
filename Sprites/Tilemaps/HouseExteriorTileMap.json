@@ -1,5 +1,5 @@
 { "frames": {
-   "KitchenTileMap 0.aseprite": {
+   "HouseExteriorTileMap 0.aseprite": {
     "frame": { "x": 0, "y": 0, "w": 32, "h": 32 },
     "rotated": false,
     "trimmed": false,
@@ -7,7 +7,7 @@
     "sourceSize": { "w": 32, "h": 32 },
     "duration": 100
    },
-   "KitchenTileMap 1.aseprite": {
+   "HouseExteriorTileMap 1.aseprite": {
     "frame": { "x": 32, "y": 0, "w": 32, "h": 32 },
     "rotated": false,
     "trimmed": false,
@@ -15,7 +15,7 @@
     "sourceSize": { "w": 32, "h": 32 },
     "duration": 100
    },
-   "KitchenTileMap 2.aseprite": {
+   "HouseExteriorTileMap 2.aseprite": {
     "frame": { "x": 64, "y": 0, "w": 32, "h": 32 },
     "rotated": false,
     "trimmed": false,
@@ -23,7 +23,7 @@
     "sourceSize": { "w": 32, "h": 32 },
     "duration": 100
    },
-   "KitchenTileMap 3.aseprite": {
+   "HouseExteriorTileMap 3.aseprite": {
     "frame": { "x": 96, "y": 0, "w": 32, "h": 32 },
     "rotated": false,
     "trimmed": false,
@@ -31,7 +31,7 @@
     "sourceSize": { "w": 32, "h": 32 },
     "duration": 100
    },
-   "KitchenTileMap 4.aseprite": {
+   "HouseExteriorTileMap 4.aseprite": {
     "frame": { "x": 128, "y": 0, "w": 32, "h": 32 },
     "rotated": false,
     "trimmed": false,
@@ -39,7 +39,7 @@
     "sourceSize": { "w": 32, "h": 32 },
     "duration": 100
    },
-   "KitchenTileMap 5.aseprite": {
+   "HouseExteriorTileMap 5.aseprite": {
     "frame": { "x": 0, "y": 32, "w": 32, "h": 32 },
     "rotated": false,
     "trimmed": false,
@@ -47,7 +47,7 @@
     "sourceSize": { "w": 32, "h": 32 },
     "duration": 100
    },
-   "KitchenTileMap 6.aseprite": {
+   "HouseExteriorTileMap 6.aseprite": {
     "frame": { "x": 32, "y": 32, "w": 32, "h": 32 },
     "rotated": false,
     "trimmed": false,
@@ -55,7 +55,7 @@
     "sourceSize": { "w": 32, "h": 32 },
     "duration": 100
    },
-   "KitchenTileMap 7.aseprite": {
+   "HouseExteriorTileMap 7.aseprite": {
     "frame": { "x": 64, "y": 32, "w": 32, "h": 32 },
     "rotated": false,
     "trimmed": false,
@@ -63,7 +63,7 @@
     "sourceSize": { "w": 32, "h": 32 },
     "duration": 100
    },
-   "KitchenTileMap 8.aseprite": {
+   "HouseExteriorTileMap 8.aseprite": {
     "frame": { "x": 96, "y": 32, "w": 32, "h": 32 },
     "rotated": false,
     "trimmed": false,
@@ -71,7 +71,7 @@
     "sourceSize": { "w": 32, "h": 32 },
     "duration": 100
    },
-   "KitchenTileMap 9.aseprite": {
+   "HouseExteriorTileMap 9.aseprite": {
     "frame": { "x": 128, "y": 32, "w": 32, "h": 32 },
     "rotated": false,
     "trimmed": false,
@@ -79,7 +79,7 @@
     "sourceSize": { "w": 32, "h": 32 },
     "duration": 100
    },
-   "KitchenTileMap 10.aseprite": {
+   "HouseExteriorTileMap 10.aseprite": {
     "frame": { "x": 0, "y": 64, "w": 32, "h": 32 },
     "rotated": false,
     "trimmed": false,
@@ -87,7 +87,7 @@
     "sourceSize": { "w": 32, "h": 32 },
     "duration": 100
    },
-   "KitchenTileMap 11.aseprite": {
+   "HouseExteriorTileMap 11.aseprite": {
     "frame": { "x": 32, "y": 64, "w": 32, "h": 32 },
     "rotated": false,
     "trimmed": false,
@@ -95,7 +95,7 @@
     "sourceSize": { "w": 32, "h": 32 },
     "duration": 100
    },
-   "KitchenTileMap 12.aseprite": {
+   "HouseExteriorTileMap 12.aseprite": {
     "frame": { "x": 64, "y": 64, "w": 32, "h": 32 },
     "rotated": false,
     "trimmed": false,
@@ -103,7 +103,7 @@
     "sourceSize": { "w": 32, "h": 32 },
     "duration": 100
    },
-   "KitchenTileMap 13.aseprite": {
+   "HouseExteriorTileMap 13.aseprite": {
     "frame": { "x": 96, "y": 64, "w": 32, "h": 32 },
     "rotated": false,
     "trimmed": false,
@@ -111,7 +111,7 @@
     "sourceSize": { "w": 32, "h": 32 },
     "duration": 100
    },
-   "KitchenTileMap 14.aseprite": {
+   "HouseExteriorTileMap 14.aseprite": {
     "frame": { "x": 128, "y": 64, "w": 32, "h": 32 },
     "rotated": false,
     "trimmed": false,
@@ -119,7 +119,7 @@
     "sourceSize": { "w": 32, "h": 32 },
     "duration": 100
    },
-   "KitchenTileMap 15.aseprite": {
+   "HouseExteriorTileMap 15.aseprite": {
     "frame": { "x": 0, "y": 96, "w": 32, "h": 32 },
     "rotated": false,
     "trimmed": false,
@@ -127,7 +127,7 @@
     "sourceSize": { "w": 32, "h": 32 },
     "duration": 100
    },
-   "KitchenTileMap 16.aseprite": {
+   "HouseExteriorTileMap 16.aseprite": {
     "frame": { "x": 32, "y": 96, "w": 32, "h": 32 },
     "rotated": false,
     "trimmed": false,
@@ -135,7 +135,7 @@
     "sourceSize": { "w": 32, "h": 32 },
     "duration": 100
    },
-   "KitchenTileMap 17.aseprite": {
+   "HouseExteriorTileMap 17.aseprite": {
     "frame": { "x": 64, "y": 96, "w": 32, "h": 32 },
     "rotated": false,
     "trimmed": false,
@@ -143,7 +143,7 @@
     "sourceSize": { "w": 32, "h": 32 },
     "duration": 100
    },
-   "KitchenTileMap 18.aseprite": {
+   "HouseExteriorTileMap 18.aseprite": {
     "frame": { "x": 96, "y": 96, "w": 32, "h": 32 },
     "rotated": false,
     "trimmed": false,
@@ -151,7 +151,7 @@
     "sourceSize": { "w": 32, "h": 32 },
     "duration": 100
    },
-   "KitchenTileMap 19.aseprite": {
+   "HouseExteriorTileMap 19.aseprite": {
     "frame": { "x": 128, "y": 96, "w": 32, "h": 32 },
     "rotated": false,
     "trimmed": false,
@@ -159,8 +159,56 @@
     "sourceSize": { "w": 32, "h": 32 },
     "duration": 100
    },
-   "KitchenTileMap 20.aseprite": {
+   "HouseExteriorTileMap 20.aseprite": {
     "frame": { "x": 0, "y": 128, "w": 32, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 32, "h": 32 },
+    "sourceSize": { "w": 32, "h": 32 },
+    "duration": 100
+   },
+   "HouseExteriorTileMap 21.aseprite": {
+    "frame": { "x": 32, "y": 128, "w": 32, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 32, "h": 32 },
+    "sourceSize": { "w": 32, "h": 32 },
+    "duration": 100
+   },
+   "HouseExteriorTileMap 22.aseprite": {
+    "frame": { "x": 64, "y": 128, "w": 32, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 32, "h": 32 },
+    "sourceSize": { "w": 32, "h": 32 },
+    "duration": 100
+   },
+   "HouseExteriorTileMap 23.aseprite": {
+    "frame": { "x": 96, "y": 128, "w": 32, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 32, "h": 32 },
+    "sourceSize": { "w": 32, "h": 32 },
+    "duration": 100
+   },
+   "HouseExteriorTileMap 24.aseprite": {
+    "frame": { "x": 128, "y": 128, "w": 32, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 32, "h": 32 },
+    "sourceSize": { "w": 32, "h": 32 },
+    "duration": 100
+   },
+   "HouseExteriorTileMap 25.aseprite": {
+    "frame": { "x": 0, "y": 160, "w": 32, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 32, "h": 32 },
+    "sourceSize": { "w": 32, "h": 32 },
+    "duration": 100
+   },
+   "HouseExteriorTileMap 26.aseprite": {
+    "frame": { "x": 32, "y": 160, "w": 32, "h": 32 },
     "rotated": false,
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 32, "h": 32 },
@@ -171,15 +219,15 @@
  "meta": {
   "app": "http://www.aseprite.org/",
   "version": "1.2.21-x64",
-  "image": "KitchenTileMap.png",
+  "image": "HouseExteriorTileMap.png",
   "format": "RGBA8888",
-  "size": { "w": 160, "h": 160 },
+  "size": { "w": 160, "h": 192 },
   "scale": "1",
   "frameTags": [
   ],
   "layers": [
    { "name": "Background", "opacity": 255, "blendMode": "normal" },
-   { "name": "Sprite Sheet", "opacity": 255, "blendMode": "normal" }
+   { "name": "Layer 1", "opacity": 255, "blendMode": "normal" }
   ],
   "slices": [
   ]

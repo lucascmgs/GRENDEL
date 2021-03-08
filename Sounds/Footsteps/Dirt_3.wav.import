@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Dirt_3.wav-9faebd0e9e5f2021c94e184a5b1e5643.sample"
+
+[deps]
+
+source_file="res://Sounds/Footsteps/Dirt_3.wav"
+dest_files=[ "res://.import/Dirt_3.wav-9faebd0e9e5f2021c94e184a5b1e5643.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

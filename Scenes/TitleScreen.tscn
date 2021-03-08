@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Fonts/m5x7.tres" type="DynamicFont" id=1]
 [ext_resource path="res://Sprites/UI/Title.png" type="Texture" id=2]
 [ext_resource path="res://Scripts/Title.gd" type="Script" id=3]
 [ext_resource path="res://Scripts/BlinkImage.gd" type="Script" id=4]
+[ext_resource path="res://Scenes/EscolhaIdioma.gd" type="Script" id=5]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0, 0, 0, 1 )
@@ -24,22 +25,39 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Press space" type="Label" parent="Panel"]
+[node name="Title" type="Sprite" parent="Panel"]
+position = Vector2( 160, 48 )
+texture = ExtResource( 2 )
+
+[node name="Idioma" type="Label" parent="Panel"]
 anchor_top = 0.75
 anchor_right = 1.0
 anchor_bottom = 0.833
-margin_left = 128.0
-margin_top = -1.52588e-05
-margin_right = -128.0
-margin_bottom = -1.936
+margin_left = 16.0
+margin_top = -32.0
+margin_right = -3.0
+margin_bottom = -20.328
 custom_fonts/font = ExtResource( 1 )
-text = "Press Space"
-script = ExtResource( 4 )
+text = "Português >"
+align = 1
+script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Title" type="Sprite" parent="Panel"]
-position = Vector2( 160, 48 )
-texture = ExtResource( 2 )
-[connection signal="timeout" from="BlinkTimer" to="Panel/Press space" method="_on_BlinkTimer_timeout"]
+[node name="PressSpace" type="Label" parent="Panel/Idioma"]
+anchor_top = 0.75
+anchor_right = 1.0
+anchor_bottom = 0.833
+margin_left = 112.0
+margin_top = 7.294
+margin_right = -115.0
+margin_bottom = 18.0025
+custom_fonts/font = ExtResource( 1 )
+text = "Aperte Espaço"
+align = 1
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="timeout" from="BlinkTimer" to="Panel/Idioma/PressSpace" method="_on_BlinkTimer_timeout"]
