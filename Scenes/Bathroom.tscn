@@ -598,9 +598,14 @@ tile_data = PoolIntArray( -65531, 4, 0, 131071, 4, 0, 196607, 4, 0, 262143, 4, 0
 position = Vector2( 176, 102.912 )
 scale = Vector2( 1.538, 0.627 )
 oneShot = true
-alternative_messages = [ "(I've already checked the bathroom sink.)" ]
 resulting_condition = "bathroom_sink_checked"
-dialog_name = "interact_bathroom_sink"
+dialog_name = "fix_bathroom_sink"
+
+[node name="CheckBathroomSink" parent="Actions" instance=ExtResource( 3 )]
+position = Vector2( 176, 102.912 )
+scale = Vector2( 1.538, 0.627 )
+conditions_to_happen = [ "bathroom_sink_checked" ]
+dialog_name = "check_bathroom_sink"
 
 [node name="InteractGarbageCan" parent="Actions" instance=ExtResource( 3 )]
 position = Vector2( 144, 80 )
@@ -612,7 +617,7 @@ position = Vector2( 112, 88 )
 scale = Vector2( 0.964, 0.627 )
 dialog_name = "interact_toilet"
 
-[node name="InteractToilet2" parent="Actions" instance=ExtResource( 3 )]
+[node name="InteractShower" parent="Actions" instance=ExtResource( 3 )]
 position = Vector2( 48, 88 )
 scale = Vector2( 1.695, 0.851 )
 dialog_name = "interact_shower"
@@ -621,9 +626,14 @@ dialog_name = "interact_shower"
 position = Vector2( 272, 88 )
 scale = Vector2( 1.538, 0.627 )
 oneShot = true
-alternative_messages = [ "(What a sad way to remember the past.)" ]
 resulting_condition = "photograph_checked"
 dialog_name = "interact_photograph"
+
+[node name="InteractPhotographAgain" parent="Actions" instance=ExtResource( 3 )]
+position = Vector2( 272, 88 )
+scale = Vector2( 1.538, 0.627 )
+conditions_to_happen = [ "photograph_checked" ]
+dialog_name = "interact_photograph_again"
 
 [node name="ArriveAfterBasement" parent="Actions" instance=ExtResource( 5 )]
 exectuteOnReady = true

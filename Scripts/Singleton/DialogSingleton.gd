@@ -13,6 +13,9 @@ var texts_ptbr = {
 		"(Vou conseguir uma grana boa aqui, com certeza)", 
 		"(Esse lugar é macabro... Vou tentar ser rápido)"
 		],
+	"check_truck" : [
+		"(Meu velho caminhão. Ele já esteve melhor. Já esteve pior também. Bem, deixa pra lá.)"
+	],
 	"seen_house" : [
 		"(Cara, olha isso aqui!)", 
 		"(Esse casebre tá caindo aos pedaços!)", 
@@ -38,7 +41,7 @@ var texts_ptbr = {
 		"SUSANE: Ah, eu não sei direito o que está acontecendo. Às vezes, escuto barulhos estranhos na pia.",
 		"SUSANE: Às vezes a água fica com um gosto e cheiro esquisitos.",
 		"E quando isso começou?",
-		"SUSANE: Há alguns meses. Mas não era tão ruim assim no começo. Mas agora tive que ligar para o John.",
+		"SUSANE: Há alguns meses. Não era tão ruim assim no começo. Mas agora tive que ligar para o John.",
 		"E onde esse problema acontece?",
 		"SUSANE: Por toda a casa. Aqui na cozinha, no banheiro. E olha, o porão está terrível.",
 		"Certo. E é lá que fica a bomba hidráulica, né?",
@@ -47,13 +50,16 @@ var texts_ptbr = {
 		"Vou ser sincero senhora. Com um problema desse tamanho, não vai sair barato.",
 		"SUSANE: Entendo. Está tudo bem. Mas por favor, acabe com isso. Não aguento mais."
 		],
-		"interact_kitchen_sink" : [
+		"fix_kitchen_sink" : [
 		"(Vamos ver o que temos aqui)",
 		"(Parece tudo ok)",
-		"(Parece não ter goteira, o fluxo de água tá normal)",
+		"(Não tem goteira, o fluxo de água tá normal)",
 		"(Só tem um cheiro estranho saindo do ralo)",
-		"(Deve ser só restos de comida acumulados)",
-		"(Vou colocar um produto de limpeza e deve ficar tudo certo)"
+		"(Devem ser restos de comida acumulados)",
+		"(Vou colocar um produto de limpeza e acho que vai ficar tudo certo)"
+		],
+		"check_kitchen_sink" : [
+			"(Eu já olhei a pia da cozinha)"
 		],
 		"interact_fridge" : [
 		"(Eu nem tô com fome, por que tô olhando pra geladeira?)",
@@ -61,20 +67,23 @@ var texts_ptbr = {
 		],
 		"interact_puddle" : [
 		"(Tem uma poça d'água aqui)",
-		"(Isso não tem a ver com o problema do encanamento, só coisa de cozinha mesmo)"
+		"(Isso não tem nada a ver com o problema do encanamento, vou deixa pra lá)"
 		],
-		"interact_bathroom_sink" : [
+		"fix_bathroom_sink" : [
 		"(Bem, essa tá funcionando bem também)",
 		"(Isso vai custar uma nota pra ela, e nem fiz nada além de aplicar diabo verde hahaha)",
 		"(Pera aí....)",
 		"(Tem algo estranho aqui)",
 		"(É aquele cheiro de novo)",
-		"(Quanto mais eu cheiro isso, mas estranho fica, mas não sei descrever direito)",
+		"(Quanto mais eu sinto esse cheiro, mais estranho fica, só que não sei descrever ele direito)",
 		"(É algo tipo... Ferro estragado?)",
 		"(Mas isso não faz sentido. Metal não \"estraga\")",
 		"(E aliás, tudo nesse banheiro é madeira ou cerâmica)",
 		"(Deve ter algo muito bizarro nesse encanamento)",
 		"(Bom, vou só aplicar o produto de limpeza mesmo, e aí voltar pra Susane)"
+		],
+		"check_bathroom_sink" : [
+			"(Eu já olhei a pia do banheiro)"
 		],
 		"interact_shower": [
 		"(Um chuveiro até que chique pra uma casa velha dessas)",
@@ -84,12 +93,15 @@ var texts_ptbr = {
 		"interact_photograph" : [
 		"(Tem um retrato aqui)",
 		"(Esses devem ser a Susane e o filho dela)",
-		"(O resto do corredor parece limpom, mas isso aqui tá cheio de poeira e teia de aranha)",
+		"(O resto do corredor parece limpo, mas isso aqui tá cheio de poeira e teias de aranha)",
 		"(Eles estão felizes nessa foto. E jovens, também! O filho deve ser um adolescente aqui)",
 		"(Ele tá usando brincos, no formato de cruz)",
 		"(Ela disse que ele não tá mais por aqui. Imagino o que houve)" ,
 		"(Deve ter sido trágico pra ela)"
 		], 
+		"interact_photograph_again" : [
+			"(É triste lembrar do passado dessa forma)"
+		],
 		"interact_garbage_can" : [
 			"(Nada além de papel higiênico e caixas de remédio)",
 			"(Não deveria ficar reparando essas coisas)"
@@ -143,9 +155,12 @@ var texts_ptbr = {
 			"(Não sei que tipo de... Criatura poderia fazer isso)",
 			"(E aliás, parece que isso foi feito de dentro do cano)",
 			"(Não tenho ideia se é isso a causa do cheiro, mesmo ele sendo mais forte aqui)",
-			"(Deve ter algo mais pra dentro do encanamento causando isso. Provavelmente um animal morto)",
+			"(Deve ter algo preso no encanamento causando isso. Provavelmente um animal morto)",
 			"(De qualquer jeito, agora só o que posso fazer é trocar essa parte do cano)",
 			"(Vou precisar pegar uma peça no meu caminhão, vamos lá então)"
+		],
+		"interact_pipe_again" : [
+			"(Não posso fazer nada por enquanto. Preciso pegar a peça nova no meu caminhão)"
 		],
 		"interact_pump" : [
 			"(Essa é a bomba hidráulica)",
@@ -165,6 +180,9 @@ var texts_ptbr = {
 			"(Pera, acho que eu... É, eu consigo pegar ele se eu colocar o dedo ali e...)",
 			"(Consegui. Vou guardar e mostrar pra Susane. De repente ela me recompensa por isso)"
 		],
+		"interact_grid_no_earrings" : [
+			"(Uma grade que dá acesso ao esgoto)"
+		],
 		"came_out_of_basement" :[
 			"(Ei, cadê a Susane?)",
 			"(Achei que ela ia me esperar aqui)",
@@ -183,7 +201,7 @@ var texts_ptbr = {
 			"O que diabos é essa coisa!?",
 			"Fi... Fique longe, por favor!",
 			"Eu só queria ganhar uma grana, droga!",
-			"Eu te odeio por me mandar aqui, John!"
+			"Eu te odeio por me mandar pra cá, John!"
 		
 		],
 		"ending_with_earrings" : [
@@ -215,6 +233,9 @@ var texts_en = {
 		"(You really can't make this shit up haha)", 
 		"(Let's go inside)"
 		],
+	"check_truck" : [
+		"(My old truck. It's seen better days. It's seen worse days too. Whatever, I should go.)"
+	],
 	"entered_kitchen" : [
 		"WOMAN: Hello dear, welcome to my home.",
 		"Hey there. You should be... Susane, right?",
@@ -242,13 +263,16 @@ var texts_en = {
 		"With a problem this big, it won't be cheap for you though, miss.",
 		"SUSANE: I see. I'm fine with that. But please, just make it stop. I can't handle it anymore."
 		],
-		"interact_kitchen_sink" : [
+		"fix_kitchen_sink" : [
 		"(Let's see what we have here)",
 		"(Well, everything seems ok)",
 		"(No noticeable dripping, water flux looks normal)",
 		"(There is a strange smell coming out of it though)",
 		"(It's probably just due to accumulated food residue)",
 		"(I'll apply a cleaning product and it should be fine)"
+		],
+		"check_kitchen_sink" : [
+			"(I've already checked the kitchen sink)"
 		],
 		"interact_fridge" : [
 		"(I'm not even hungry, why am I looking at the fridge?)",
@@ -258,7 +282,7 @@ var texts_en = {
 		"(There's a puddle of water here)",
 		"(This one is not because of piping problems though, just normal kitchen stuff)"
 		],
-		"interact_bathroom_sink" : [
+		"fix_bathroom_sink" : [
 		"(Well, this one is working fine too)",
 		"(This is gonna cost her a lot, and I haven't even done anything besides using caustic soda hahaha)",
 		"(But wait...)",
@@ -270,6 +294,9 @@ var texts_en = {
 		"(On top of that, everything in this bathroom ceramic and wood)",
 		"(There must be something really messed up going on with the pipes)",
 		"(I'll just apply the cleaning product again for now and go back to Susane)"
+		],
+		"check_bathroom_sink" : [
+			"(I've already checked the bathroom sink)"
 		],
 		"interact_shower": [
 		"(A very elegant shower for an old house like this)",
@@ -284,7 +311,9 @@ var texts_en = {
 		"(He's wearing a pair of earrings, each resembling a cross)",
 		"(She mentioned he isn't around anymore. I wonder what happened)" ,
 		"(Must've been tragic for her)"
-		], 
+		], "interact_photograph_again" : [
+			"(What a sad way to remember the past)"
+		],
 		"interact_garbage_can" : [
 			"(Nothing but old medicine carts and toilet paper)",
 			"(I shouldn't be looking at this stuff)"
@@ -342,6 +371,9 @@ var texts_en = {
 			"(Anyway, the only thing I can do for now is change this part of the pipe altogether)",
 			"(I'll need to get a replacement at my truck, so let's go)"
 		],
+		"interact_pipe_again" : [
+			"(I'm done here for now. I need to get the replacement part at my truck.)"
+		],
 		"interact_pump" : [
 			"(This is the water pump)",
 			"(It seems to be working fine, the water pressure is alright)",
@@ -359,6 +391,9 @@ var texts_en = {
 			"(Looks like an earring of some sort. Have I seen it before?)",
 			"(Wait, I think I could... Yeah, I can definetly grab it if I use my finger)",
 			"(Got it. I'll keep it to show to Susane. Maybe I'll even get a reward)"
+		],
+		"interact_grid_no_earrings" : [
+			"(A Grate that gives access to the sewers)"
 		],
 		"came_out_of_basement" :[
 			"(Hey, where's Susane?)",

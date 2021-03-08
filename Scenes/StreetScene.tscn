@@ -821,9 +821,14 @@ position = Vector2( 56, 148 )
 scale = Vector2( 6.002, 1.925 )
 oneShot = true
 conditions_to_happen = [ "pipe_checked" ]
-alternative_messages = [ "(My old truck. It's seen better days. It's seen worse days too. Whatever, I should go.)" ]
 resulting_condition = "got_replacement"
 dialog_name = "got_replacement"
+
+[node name="Check truck" parent="Actions" instance=ExtResource( 6 )]
+position = Vector2( 56, 148 )
+scale = Vector2( 6.002, 1.925 )
+conditions_not_to_happen = [ "pipe_checked" ]
+dialog_name = "check_truck"
 
 [node name="SceneSwitchArea" type="Node" parent="."]
 

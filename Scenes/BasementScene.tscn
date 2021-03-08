@@ -649,17 +649,28 @@ dialog_name = "arrived_at_basement"
 position = Vector2( 238, 82 )
 scale = Vector2( 1.609, 1.302 )
 oneShot = true
-alternative_messages = [ "(I'm done here for now. I need to get the replacement part at my truck.)" ]
 resulting_condition = "pipe_checked"
 dialog_name = "interact_pipe"
+
+[node name="Check Pipe Again" parent="Actions" instance=ExtResource( 4 )]
+position = Vector2( 238, 82 )
+scale = Vector2( 1.609, 1.302 )
+conditions_to_happen = [ "pipe_checked" ]
+dialog_name = "interact_pipe_again"
 
 [node name="Check Grid" parent="Actions" instance=ExtResource( 4 )]
 position = Vector2( 304, 68 )
 scale = Vector2( 1.609, 1.302 )
+oneShot = true
 conditions_to_happen = [ "photograph_checked" ]
-alternative_messages = [ "(A Grate that gives access to the sewers.)" ]
 resulting_condition = "grate_checked"
 dialog_name = "interact_grid"
+
+[node name="Check Grid No Earrings" parent="Actions" instance=ExtResource( 4 )]
+position = Vector2( 304, 68 )
+scale = Vector2( 1.609, 1.302 )
+conditions_not_to_happen = [ "photograph_checked" ]
+dialog_name = "interact_grid_no_earrings"
 
 [node name="Check Water Pump" parent="Actions" instance=ExtResource( 4 )]
 position = Vector2( 18, 82 )

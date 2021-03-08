@@ -905,14 +905,20 @@ dialog_name = "came_out_of_bedroom"
 exectuteOnReady = true
 song_name = "Kitchen"
 
-[node name="InteractSink" parent="Actions" instance=ExtResource( 7 )]
+[node name="FixSink" parent="Actions" instance=ExtResource( 7 )]
 position = Vector2( 144.666, 104 )
 scale = Vector2( 1.27, 0.902 )
 oneShot = true
 conditions_not_to_happen = [ "kitchen_sink_checked" ]
 alternative_messages = [ "I've already checked the kitchen sink." ]
 resulting_condition = "kitchen_sink_checked"
-dialog_name = "interact_kitchen_sink"
+dialog_name = "fix_kitchen_sink"
+
+[node name="CheckSinkAfterFixed" parent="Actions" instance=ExtResource( 7 )]
+position = Vector2( 144.666, 104 )
+scale = Vector2( 1.27, 0.902 )
+conditions_to_happen = [ "kitchen_sink_checked" ]
+dialog_name = "check_kitchen_sink"
 
 [node name="InteractFridge" parent="Actions" instance=ExtResource( 7 )]
 position = Vector2( 48, 104 )
