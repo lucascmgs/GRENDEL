@@ -8,7 +8,7 @@ export var destroyActionOnComplete = false
 
 export(Array, String) var conditions_to_happen
 export(Array, String) var conditions_not_to_happen
-export(Array, String) var alternative_messages
+export (String) var alternative_text_name
 export(String) var resulting_condition
 
 
@@ -50,8 +50,9 @@ func try_to_perform() :
 	perform()
 	
 func display_message_and_quit() :
-	if(not alternative_messages.empty()) :
-		DialogSingleton.startDialog(alternative_messages)
+	if alternative_text_name != "" :
+		var text = DialogSingleton.texts[alternative_text_name]
+		DialogSingleton.startDialog(text)
 
 func perform() :
 	print("This method should be overriden in " + name + "!")

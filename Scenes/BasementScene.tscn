@@ -633,7 +633,6 @@ tile_data = PoolIntArray( 0, 16, 0, 1, 16, 0, 2, 16, 0, 3, 16, 0, 4, 16, 0, 5, 1
 position = Vector2( 16, 176 )
 scale = Vector2( 1.777, 1.683 )
 conditions_to_happen = [ "pipe_checked" ]
-alternative_messages = [ "I can't go back yet." ]
 target_scene = "res://Scenes/Bedroom.tscn"
 new_player_position = Vector2( 288, 144 )
 
@@ -681,12 +680,10 @@ dialog_name = "interact_pump"
 position = Vector2( 270, 176 )
 scale = Vector2( 1.668, 1.661 )
 conditions_to_happen = [ "photograph_checked" ]
-alternative_messages = [ "(A Grate that gives access to the sewers.)" ]
 dialog_name = "interact_box_1"
 
 [node name="Check Box 2" parent="Actions" instance=ExtResource( 4 )]
 position = Vector2( 304, 142 )
 scale = Vector2( 1.668, 1.661 )
 conditions_to_happen = [ "photograph_checked" ]
-alternative_messages = [ "(A Grate that gives access to the sewers.)" ]
 dialog_name = "interact_box_2"

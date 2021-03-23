@@ -23,4 +23,5 @@ func perform() :
 		Player.canMove = true
 
 	Player.position = new_player_position
-	SceneSwitcher.goto_scene(target_scene)
+	if target_scene != "":
+		SceneSwitcher.goto_scene(target_scene)

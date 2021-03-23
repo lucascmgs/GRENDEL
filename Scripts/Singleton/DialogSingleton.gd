@@ -215,6 +215,15 @@ var texts_ptbr = {
 			"Você levou ela, não é? Você deve sentir falta dela.",
 			"Sua mãe te deu esse brinco, não é? Estou com o outro dele aqui. Pegue.",
 			"(A criatura pegou o brinco e se apressou para o porão)"
+		],
+		"cannot_go_to_bedroom" :[
+			"(Não devo ir para o quarto ainda)"
+		],
+		"cannot_go_outside" : [
+			"(Não devo sair agora)"
+		],
+		"cannot_go_to_bathroom" : [
+			"(Preciso checar a pia da cozinha primeiro)"
 		]
 }
 
@@ -427,6 +436,15 @@ var texts_en = {
 			"You've taken her, right? You must have missed her.",
 			"I've got your other earring here, your mom gave it to you, right? Take it.",
 			"(The creature takes the earring from me and scrambles towards the basement)"
+		],
+		"cannot_go_to_bedroom" :[
+			"(I shouldn't go to the bedroom yet)"
+		],
+		"cannot_go_outside" : [
+			"(I shouldn't go out yet)"
+		],
+		"cannot_go_to_bathroom" : [
+			"(I have to check the kitchen sink first)"
 		]
 }
 
