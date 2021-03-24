@@ -153,7 +153,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.2, 0.34, 0.48 ),
+"times": PoolRealArray( 0, 0.14, 0.34, 0.48 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
 "values": [ Rect2( 768, 0, 64, 64 ), Rect2( 832, 0, 64, 64 ), Rect2( 896, 0, 64, 64 ), Rect2( 960, 0, 64, 64 ) ]
@@ -165,14 +165,14 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.2, 0.34, 0.48 ),
+"times": PoolRealArray( 0, 0.14, 0.34, 0.48 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, 0 ) ]
 }
 
 [sub_resource type="Animation" id=8]
-length = 0.96
+length = 0.68
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:region_rect")
@@ -181,10 +181,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.2, 0.34, 0.48, 0.68, 0.82 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.2, 0.34, 0.54 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Rect2( 512, 0, 64, 64 ), Rect2( 576, 0, 64, 64 ), Rect2( 640, 0, 64, 64 ), Rect2( 704, 0, 64, 64 ), Rect2( 640, 0, 64, 64 ), Rect2( 576, 0, 64, 64 ) ]
+"values": [ Rect2( 512, 0, 64, 64 ), Rect2( 576, 0, 64, 64 ), Rect2( 640, 0, 64, 64 ), Rect2( 704, 0, 64, 64 ) ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("Sprite:offset")
@@ -193,14 +193,14 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.2, 0.34, 0.48, 0.68, 0.82 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.2, 0.34, 0.54 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, 0 ) ]
+"values": [ Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, 0 ) ]
 }
 
 [sub_resource type="Animation" id=9]
-length = 0.96
+length = 0.68
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:region_rect")
@@ -209,10 +209,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.2, 0.34, 0.48, 0.68, 0.82 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.2, 0.34, 0.54 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Rect2( 256, 0, 64, 64 ), Rect2( 320, 0, 64, 64 ), Rect2( 384, 0, 64, 64 ), Rect2( 448, 0, 64, 64 ), Rect2( 384, 0, 64, 64 ), Rect2( 320, 0, 64, 64 ) ]
+"values": [ Rect2( 256, 0, 64, 64 ), Rect2( 320, 0, 64, 64 ), Rect2( 384, 0, 64, 64 ), Rect2( 448, 0, 64, 64 ) ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("Sprite:offset")
@@ -221,10 +221,10 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.2, 0.34, 0.48, 0.68, 0.82 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.2, 0.34, 0.54 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, 0 ) ]
+"values": [ Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, 0 ) ]
 }
 
 [sub_resource type="AnimationNodeAnimation" id=10]

@@ -53,7 +53,7 @@
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
     "sourceSize": { "w": 64, "h": 64 },
-    "duration": 140
+    "duration": 200
    },
    "NewPlayer 7.aseprite": {
     "frame": { "x": 448, "y": 0, "w": 64, "h": 64 },
@@ -61,7 +61,7 @@
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
     "sourceSize": { "w": 64, "h": 64 },
-    "duration": 200
+    "duration": 140
    },
    "NewPlayer 8.aseprite": {
     "frame": { "x": 512, "y": 0, "w": 64, "h": 64 },
@@ -85,7 +85,7 @@
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
     "sourceSize": { "w": 64, "h": 64 },
-    "duration": 140
+    "duration": 200
    },
    "NewPlayer 11.aseprite": {
     "frame": { "x": 704, "y": 0, "w": 64, "h": 64 },
@@ -93,7 +93,7 @@
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
     "sourceSize": { "w": 64, "h": 64 },
-    "duration": 200
+    "duration": 140
    },
    "NewPlayer 12.aseprite": {
     "frame": { "x": 768, "y": 0, "w": 64, "h": 64 },
@@ -101,7 +101,7 @@
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
     "sourceSize": { "w": 64, "h": 64 },
-    "duration": 200
+    "duration": 140
    },
    "NewPlayer 13.aseprite": {
     "frame": { "x": 832, "y": 0, "w": 64, "h": 64 },
@@ -109,7 +109,7 @@
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 64, "h": 64 },
     "sourceSize": { "w": 64, "h": 64 },
-    "duration": 140
+    "duration": 200
    },
    "NewPlayer 14.aseprite": {
     "frame": { "x": 896, "y": 0, "w": 64, "h": 64 },
@@ -162,7 +162,7 @@
  },
  "meta": {
   "app": "http://www.aseprite.org/",
-  "version": "1.2.21-x64",
+  "version": "1.2.25-x64",
   "image": "NewPlayerSS.png",
   "format": "RGBA8888",
   "size": { "w": 1280, "h": 64 },
@@ -172,8 +172,8 @@
    { "name": "Idle left", "from": 1, "to": 1, "direction": "forward" },
    { "name": "Idle front", "from": 2, "to": 2, "direction": "forward" },
    { "name": "Idle back", "from": 3, "to": 3, "direction": "forward" },
-   { "name": "Run right", "from": 4, "to": 7, "direction": "pingpong" },
-   { "name": "Run left", "from": 8, "to": 11, "direction": "pingpong" },
+   { "name": "Run right", "from": 4, "to": 7, "direction": "forward" },
+   { "name": "Run left", "from": 8, "to": 11, "direction": "forward" },
    { "name": "Run front", "from": 12, "to": 15, "direction": "forward" },
    { "name": "Run back", "from": 16, "to": 19, "direction": "forward" }
   ]
